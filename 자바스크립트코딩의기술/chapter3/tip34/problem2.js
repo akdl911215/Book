@@ -16,13 +16,15 @@ const exhibit = {
     contact: 'Dyan',
 }
 
-function mergeProgramInformation (building, manager, event) {
+function mergeProgramInformation (building, manager) {
     const { hours, address } = building;
     const { name, phone } = manager;
     const defaults = { hours, address, contact: name, phone };
 
-    return { ...defaults, ...event};
+    return program => {
+        return { ...defaults, ...program}
+    }
 }
 
-console.log(mergeProgramInformation(building, manager, program));
-console.log(mergeProgramInformation(building, manager, exhibit));
+console.log(mergeProgramInformation(building, manager)(program));
+console.log(mergeProgramInformation(building, manager)(exhibit));
