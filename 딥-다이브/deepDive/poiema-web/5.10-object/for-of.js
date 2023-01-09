@@ -1,6 +1,8 @@
 // for-in 단점 극복
 const arr = [1, 2, 3];
 arr.name = 'my arr';
+console.log('arr : ', arr);
+// arr :  [ 1, 2, 3, name: 'my arr' ]
 
 for (const value of arr) {
     console.log(value);
