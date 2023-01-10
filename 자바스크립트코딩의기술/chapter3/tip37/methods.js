@@ -1,4 +1,4 @@
-class Coupon {
+export class Coupon {
     constructor(price, expiration) {
         this.price = price;
         this.expiration = expiration || '2주';
@@ -13,10 +13,10 @@ class Coupon {
     }
 }
 
-const coupon = new Coupon(5);
+// const coupon = new Coupon(5);
 
-console.log(coupon.getPriceText());
+// console.log(coupon.getPriceText());
 // $ 5
 
-console.log(coupon.getExpirationMessage());
+// console.log(coupon.getExpirationMessage());
 //  이 쿠폰은 2주 후에 만료됩니다.
