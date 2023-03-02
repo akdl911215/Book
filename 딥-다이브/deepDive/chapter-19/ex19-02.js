@@ -1,6 +1,9 @@
 const circle = {
+    // 상태를 나타내는 데이터
     radius: 5, // 반지름
 
+
+    // 동작
     // 원의 지름: 2r
     getDiameter() {
         return 2 * this.radius;
