@@ -15,4 +15,4 @@ console.log(radius); // 5
 console.log(getDiameter()); // 10
 
 circle.getDiameter();
-// TypeError: Cannot read properties of undefined (reading 'getDiameter')
+// TypeError: Cannot read properties of undefined (reading 'getDiameter')9
