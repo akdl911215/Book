@@ -5,7 +5,7 @@ enum Brand {
 }
 
 const type: typeof Brand = {Nike: Brand.Nike, Adidas: Brand.Adidas, Puma: Brand.Puma};
-const type2: keyof typeof Brand = {Nike: 'nike', Adidas: 'adidas', Puma: 'puma'};
+// const type2: keyof typeof Brand = {Nike: 'nike', Adidas: 'adidas', Puma: 'puma'};
 
 
 interface Brand2 {
